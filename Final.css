@@ -1,0 +1,228 @@
+/* --- HERO & PROFILE CENTERED --- */
+
+.profile-container {
+  text-align: center;
+  padding-top: 80px;
+  /* Reduced space from top of page */
+  margin-bottom: -20px;
+  /* Pulls the text up closer to the image */
+}    
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-index: cover;
+  border: 3px solid white;
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero {
+  /* Removed height: 100vh to stop the forced large gap */
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Start content near the image */
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  /* Small gap between image and "Hello" */
+}
+
+/* Ensure the text looks clean */
+.hero h1 {
+  margin: 10px 0;
+}
+
+/* --- THE REST OF YOUR CSS --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+  overflow-x: hidden
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.cursor {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: cyan;
+  border-radius: 50%;
+  box-shadow: 0 0 15px cyan;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 10;
+}
+
+.menu-icon {
+  font-size: 25px;
+  cursor: pointer
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background: #111;
+  padding: 40px;
+  transition: 0.4s;
+  z-index: 100;
+}
+
+.menu.active {
+  right: 0
+}
+
+.menu a {
+  display: block;
+  margin: 20px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.highlight {
+  background: linear-gradient(45deg, cyan, magenta);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.section .about2 {
+  min-height: 200px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.projects .click-card {
+  min-height: 300px;
+  width: 45%;
+}
+
+.skill {
+  margin: 15px 0;
+  text-align: left
+}
+
+.bar {
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden
+}
+
+.progress {
+  height: 10px;
+  background: cyan;
+  width: 0;
+  transition: 1s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* CONTACT */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+button {
+  padding: 12px;
+  background: linear-gradient(45deg, cyan, magenta);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+.close-btn {
+  cursor: pointer;
+}

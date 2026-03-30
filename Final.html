@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="Final.css">
+</head>
+
+<body>
+
+  <div class="cursor"></div>
+
+  <!-- NAV -->
+  <div class="navbar">
+    <h2>My Portfolio</h2>
+    <div class="menu-icon">☰</div>
+  </div>
+
+  <div class="menu">
+    <span class="close-btn" onclick="toggleMenu()">✖</span>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="Satish_Resume.pdf" target="_blank" class="resume-btn">Resume</a>
+
+  </div>
+  <div class="profile-container">
+    <img src="Portfolio.jpeg" alt="Profile" class="profile-img">
+  </div>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <h1>Hello 👋</h1>
+    <br>
+    <h1>I’m <span class="highlight"> Satish Chandra Yadav </span></h1>
+    <br>
+    <h3><span id="typing"></span></h3>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="glass click-card about2">
+      <h1>About Me</h1>
+      <br>
+      <br>
+      <p> I am an enthusiastic and self-motivated aspiring software developer with a strong passion for technology,
+        coding, and problem-solving.
+        I have a solid interest in understanding how software systems work and how they can be used to solve real-world
+        challenges effectively.
+        Over time, I have developed hands-on experience in Python, Data Structures, SQL, and basic web development,
+        and I enjoy applying these skills to build practical projects that strengthen my technical understanding and
+        creativity.
+        I am someone who believes in continuous learning, consistency, and growth. I actively seek opportunities to
+        improve my coding skills,
+        explore modern technologies, and gain deeper knowledge of software development concepts. Beyond technical
+        abilities,
+        I also value communication, teamwork, adaptability, and a positive learning attitude, which help me work
+        effectively in collaborative environments.
+        My goal is to start my professional journey in the software industry through internships or entry-level
+        opportunities
+        where I can apply my knowledge, gain real-world experience, contribute to impactful projects, and continue
+        growing into a skilled and responsible developer.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="glass click-card about2">
+      <h1>Skills</h1>
+
+      <div class="skill">HTML 94%<div class="bar">
+          <div class="progress" data="94%"></div>
+        </div>
+      </div>
+      <div class="skill">CSS 81%<div class="bar">
+          <div class="progress" data="81%"></div>
+        </div>
+      </div>
+      <div class="skill">JavaScript 42%<div class="bar">
+          <div class="progress" data="42%"></div>
+        </div>
+      </div>
+      <div class="skill">Python 70%<div class="bar">
+          <div class="progress" data="70%"></div>
+        </div>
+      </div>
+      <div class="skill">MySQL 51%<div class="bar">
+          <div class="progress" data="51%"></div>
+        </div>
+      </div>
+      <div class="skill">C 90%<div class="bar">
+          <div class="progress" data="90%"></div>
+        </div>
+      </div>
+      <div class="skill">DSA 31%<div class="bar">
+          <div class="progress" data="31%"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div><h1>Projects</h1></div>
+    <br>
+    <div class="projects">
+      <div class="glass click-card">
+        <h2>Flight Reservation System</h2> <br> <br>
+        <p style="font-size: 18px;" style="text-align:left;">Developed a Flight Reservation System to streamline airline
+          booking and passenger management processes.The project allows users to search flights, book tickets, select
+          seats, and manage reservations through a user-friendly interface. Integrated database functionality to store
+          passenger details, flight schedules, booking records, and payment information securely. Implemented admin
+          features for managing flights, routes, ticket pricing, and customer data efficiently. The system was designed
+          to reduce manual effort, improve booking accuracy, and enhance overall operational efficiency. Built using
+          programming concepts, database management, and CRUD operations, this project demonstrates practical knowledge
+          of software development, backend integration, and real-world reservation system workflows. Using tech stack
+          Python and MySQL.</p>
+      </div>
+      <div class="glass click-card">
+        <h2>Digital Helpdesk Solution</h2> <br> <br>
+        <p style="font-size: 18px;" style="text-align: left;">Smart Helpdesk Ticketing Solution is an AI-powered IT
+          support system that automates ticket creation, tracking, and resolution. It addresses issues like delayed or
+          lost tickets, lack of centralized monitoring, repeated problem reporting, and slow manual support. Using
+          AI-based issue classification, the system identifies problems and assigns them automatically to the correct
+          team. It also offers duplicate ticket detection, chatbot support for common queries, real-time status updates,
+          voice-to-ticket conversion, and IoT-based auto-ticketing. An analytics dashboard helps monitor performance,
+          ticket trends, and service efficiency. Built with HTML, CSS, JavaScript, Node.js, Express.js, TensorFlow,
+          Gemini API, SQL, Vercel, and Supabase, this project provides a smart, scalable, and efficient solution for
+          modern IT service management.</p>
+      </div>
+      <!--<div class="glass click-card"><h2> My Portfolio</h2></div> -->
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="glass click-card about2 cant">
+      <h1>Contact</h1>
+      <br>
+      <br>
+      <form>
+        <input placeholder="Name">
+        <input placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="footer">
+      <p style=" opacity: 1;">
+        <br>&copy; 2026 Made With <span style="color: #ff0000;">&#10084;</span> By S.C.Yadav | All Rights Reserved.
+      </p>
+    </div>
+  </section>
+  <!-- THREE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="Final.js"></script>
+
+</body>
+
+</html>
